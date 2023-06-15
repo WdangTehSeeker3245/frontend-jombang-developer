@@ -13,7 +13,7 @@ import SoftwareDeveloper from './pages/SoftwareDeveloper';
 
 // Kecamatan
 import BandarKedungmulyo from './pages/kecamatan/BandarKedungmulyo'
-
+import Bareng from './pages/kecamatan/Bareng'
 
 class App extends Component {
   render() {
@@ -30,6 +30,7 @@ class App extends Component {
 
           {/* Kecamatan */}
           <Route path="/bandar-kedungmulyo" element={<BandarKedungmulyo />} />
+          <Route path="/bareng" element={<Bareng />} />
         </Routes>
       </div>
     );
