@@ -4,7 +4,9 @@ class SoftwareDeveloper extends Component {
     render() {
         return (
             <div>
+               <center>
                Software Developer Page
+               </center>
             </div>
         );
     }

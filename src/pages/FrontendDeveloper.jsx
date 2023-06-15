@@ -4,7 +4,9 @@ class FrontendDeveloper extends Component {
     render() {
         return (
             <div>
+               <center>
                Frontend Developer Page
+               </center>
             </div>
         );
     }

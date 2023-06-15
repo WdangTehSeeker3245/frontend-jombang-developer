@@ -4,7 +4,9 @@ class BackendDeveloper extends Component {
     render() {
         return (
             <div>
-               Backend Developer Page
+                <center>
+                Backend Developer Page
+                </center>
             </div>
         );
     }

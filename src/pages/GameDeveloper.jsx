@@ -4,7 +4,9 @@ class GameDeveloper extends Component {
     render() {
         return (
             <div>
-               Game Developer Page
+               <center>
+                Game Developer Page
+               </center>
             </div>
         );
     }
