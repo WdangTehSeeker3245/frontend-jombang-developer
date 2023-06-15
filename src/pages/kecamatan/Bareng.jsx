@@ -1,18 +1,17 @@
 import { Component } from 'react'
 
-class BandarKedungmulyo extends Component {
+class Bareng extends Component {
     render() {
         return (
             <div>
                 <br />
                 <br />
                <center>
-                    Maaf Belum Ada Data Developer <br />
-                    Bandar Kedung Mulyo
+                    Bareng Developer Page
                </center>
             </div>
         );
     }
 }
 
-export default BandarKedungmulyo;
+export default Bareng;
