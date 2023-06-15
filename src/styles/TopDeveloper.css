@@ -1,0 +1,19 @@
+.margin-topdeveloper-card {
+    margin-left: 50px;
+}
+
+.img-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+@media (max-width:526px){
+    .margin-topdeveloper-card {
+        margin-left: 40px;
+    }
+}

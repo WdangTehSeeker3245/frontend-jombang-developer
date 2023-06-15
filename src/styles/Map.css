@@ -1,0 +1,4 @@
+.hovermapempty:hover {
+    fill: red;
+    opacity: 0.8;
+}
