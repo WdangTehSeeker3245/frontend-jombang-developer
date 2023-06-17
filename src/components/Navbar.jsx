@@ -1,11 +1,13 @@
 import { Component } from 'react'
 import { Link } from "react-router-dom"
 
+import '../styles/General.css'
+
 class Navbar extends Component {
     render() {
         return (
             <div className="navbar bg-base-100">
-                <a className="btn btn-ghost normal-case text-xl">Jombang Developer</a>
+                <div className="text-xl font-bold"><span className='title-one'>Jombang</span><span className='title-two'>Developer</span></div>
                 <div className="navbar-end absolute right-0">
                     <div className="dropdown dropdown-bottom dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">

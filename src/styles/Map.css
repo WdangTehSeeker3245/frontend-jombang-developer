@@ -4,6 +4,6 @@
 }
 
 .hovermap:hover {
-    fill: black;
+    fill: green;
     opacity: 0.8;
 }

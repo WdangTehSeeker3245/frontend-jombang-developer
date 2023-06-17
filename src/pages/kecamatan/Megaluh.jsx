@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-class BandarKedungmulyo extends Component {
+class Megaluh extends Component {
     render() {
         return (
             <div>
@@ -8,11 +8,11 @@ class BandarKedungmulyo extends Component {
                 <br />
                <center>
                     Maaf Belum Ada Data Developer <br />
-                    Bandar Kedungmulyo
+                    Megaluh
                </center>
             </div>
         );
     }
 }
 
-export default BandarKedungmulyo;
+export default Megaluh;

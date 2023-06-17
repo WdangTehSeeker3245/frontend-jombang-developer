@@ -12,6 +12,45 @@
     border: 2px solid gray;
 }
 
+.cardtopdev {
+    position: relative;
+}
+.univ{
+    padding: 5px;
+    position: absolute;
+    top:0;
+    left:5;
+    background-color: green;
+    display: inline-block;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.smenengah{
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 10;
+    margin-left: 60px;
+    background-color:red;
+    display: inline-block;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.img-sekolah {
+    width: 40px;
+    height: 40px;
+}
+
+.rating-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.rating-star {
+    width: 20px;
+    height: 20px;
+}
+
 @media (max-width:526px){
     .margin-topdeveloper-card {
         margin-left: 40px;
