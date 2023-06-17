@@ -147,6 +147,13 @@ class TopDeveloper extends Component {
                         <br />
                         <br />
                         <img src={FaizalNF} className="img-card"/>
+                        <div className='rating-container flex justify-center items-center'>
+                            <img className='rating-star' src={FullStar} />
+                            <img className='rating-star' src={FullStar} />
+                            <img className='rating-star' src={EmptyStar} />
+                            <img className='rating-star' src={EmptyStar} />
+                            <img className='rating-star' src={EmptyStar} />
+                        </div>
                         <h3 className="text-lg font-bold text-center">Faizal Nurul Firdaus</h3>
                         <p className="text-center">Backend Developer <br/> Kecamatan Bareng</p>
                         <br />
