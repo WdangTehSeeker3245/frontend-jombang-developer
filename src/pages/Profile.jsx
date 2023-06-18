@@ -171,7 +171,7 @@ class Profile extends Component {
                     </div>
                 </center>
                 <br />
-                <div className="card mx-2 p-4 shadow-lg border border-gray-200 mb-5">
+                <div className="card card-index mx-2 p-4 shadow-lg border border-gray-200 mb-5">
                     <div className="card-body">
                         <img src={FaizalNF} className='img-card' />
                         <h3 className="text-lg font-bold text-center">Faizal Nurul Firdaus</h3>
