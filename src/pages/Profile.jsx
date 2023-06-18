@@ -27,9 +27,12 @@ import '../styles/Profile.css'
 import FaizalNF from '../assets/developer/faizal-nurul-firdaus.jpg'
 
 // Contact
-
 import Facebook from '../assets/contact/facebook.svg'
 import Linkedin from '../assets/contact/linkedin.png'
+
+// Rating
+import FullStar from '../assets/star_full.svg'
+import EmptyStar from '../assets/empty_star.svg'
 
 class Profile extends Component {
     constructor(props) {
@@ -147,6 +150,14 @@ class Profile extends Component {
                     <div className="card-body">
                         <img src={FaizalNF} className='img-card' />
                         <h3 className="text-lg font-bold text-center">Faizal Nurul Firdaus</h3>
+                        <div className='rating-container flex justify-center items-center'>
+                            <img className='rating-star' src={FullStar} />
+                            <img className='rating-star' src={FullStar} />
+                            <img className='rating-star' src={EmptyStar} />
+                            <img className='rating-star' src={EmptyStar} />
+                            <img className='rating-star' src={EmptyStar} />
+                        </div>
+                        <button style={{width:"150px"}}className='btn btn-sm btn-info mx-auto' href="#">Rate Developer</button>
                         <hr className='hrline2 mx-auto' />
                         <table>
                             <tr>
