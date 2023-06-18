@@ -35,11 +35,15 @@ import Tembelang from './pages/kecamatan/Tembelang';
 import Wonosalam from './pages/kecamatan/Wonosalam';
 import Profile from './pages/Profile';
 
+// Utils
+import ScrollToTop from './utils/ScrollToTop';
+
 class App extends Component {
   render() {
     return (
       <div>
         <Navbar/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/game-developer" element={<GameDeveloper />} />
