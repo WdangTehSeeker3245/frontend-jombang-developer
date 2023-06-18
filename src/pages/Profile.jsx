@@ -186,7 +186,7 @@ class Profile extends Component {
                         <center>
                             <p className='font-bold'>Skill As Backend Developer</p>
                             <hr className='hrline2' />
-                            <div className='px-4 py-4 rounded' style={{width:"80%",height:"500px",marginBottom:"80px"}}>
+                            <div className='px-4 py-4 rounded radar-con'>
                                 <Radar data={data} options={options}></Radar>
                             </div>
                             <p className='font-bold'>All Skill</p>
