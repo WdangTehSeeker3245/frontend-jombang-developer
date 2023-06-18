@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { Link } from "react-router-dom"
 
 import '../styles/General.css'
 import '../styles/TopDeveloper.css'
@@ -23,6 +24,22 @@ import RizkyRamdani from '../assets/developer/rizky-ramdani.jpg'
 import FaizalNF from '../assets/developer/faizal-nurul-firdaus.jpg'
 
 class TopDeveloper extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          count: 0,
+        };
+    }
+    handleIncrement = () => {
+        const { count } = this.state;
+        const maxValue = 5; 
+    
+        if (count === maxValue) {
+          this.setState({ count: 0 });
+        } else {
+          this.setState((prevState) => ({ count: prevState.count + 1 }));
+        }
+    };
     render() {
         return (
             <div className="topdeveloper-con">
@@ -158,7 +175,7 @@ class TopDeveloper extends Component {
                         <p className="text-center">Backend Developer <br/> Kecamatan Bareng</p>
                         <br />
                         <center>
-                        <a className='btn btn-sm btn-info' href="#">Show Detail</a>
+                        <Link to="/profile?id=5" className='btn btn-sm btn-info'>Show Detail</Link>
                         </center>
                         <br />
                     </div>

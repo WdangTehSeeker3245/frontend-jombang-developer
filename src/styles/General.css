@@ -17,10 +17,22 @@
     opacity: 0.5;
 }
 
+.hrline2 {
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    opacity: 0.5;
+}
+
 .topdeveloper-con {
     margin-top: 100px;
 }
 
 .map-con {
     margin-top: 400px;
+}
+
+.skillbar-percent {
+    color: red; /* Change the color of the percentage text here */
 }

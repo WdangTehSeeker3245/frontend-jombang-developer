@@ -33,6 +33,7 @@ import Ploso from './pages/kecamatan/Ploso';
 import Sumobito from './pages/kecamatan/Sumobito';
 import Tembelang from './pages/kecamatan/Tembelang';
 import Wonosalam from './pages/kecamatan/Wonosalam';
+import Profile from './pages/Profile';
 
 class App extends Component {
   render() {
@@ -69,6 +70,9 @@ class App extends Component {
           <Route path="/sumobito" element={<Sumobito/>} />
           <Route path="/tembelang" element={<Tembelang/>} />
           <Route path="/wonosalam" element={<Wonosalam/>} />
+
+          {/* Profile */}
+          <Route path="/profile" element={<Profile/>} />
         </Routes>
       </div>
     );
