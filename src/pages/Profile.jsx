@@ -131,10 +131,10 @@ class Profile extends Component {
             }]
         };
         const dataBackend = {
-            labels: ['Laravel', 'Codeigniter', 'Flask', 'Django', 'Express', 'Golang', 'Rails', 'Spring'],
+            labels: ['Laravel', 'Codeigniter', 'Flask', 'Django', 'Express', 'Golang', 'Rails', 'Spring','Wordpress Api','Headless CMS'],
             datasets: [{
                 label: "Mastery",
-                data: [80, 60, 100, 40, 50, 50, 40, 20],
+                data: [80, 60, 100, 40, 50, 50, 40, 20, 10, 10],
                 backgroundColor: 'green',
                 borderColor: 'white'
             }]
