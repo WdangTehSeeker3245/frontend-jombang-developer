@@ -27,8 +27,11 @@ import '../styles/Profile.css'
 import FaizalNF from '../assets/developer/faizal-nurul-firdaus.jpg'
 
 // Contact
+import Github from '../assets/contact/github.png'
 import Facebook from '../assets/contact/facebook.svg'
 import Linkedin from '../assets/contact/linkedin.png'
+import Instagram from '../assets/contact/instagram.png'
+import Twitter from '../assets/contact/twitter.svg'
 
 // Rating
 import FullStar from '../assets/star_full.svg'
@@ -66,7 +69,7 @@ class Profile extends Component {
             {
               name: 'Javascript',
               level: 40,
-              color: 'red',
+              color: 'green',
             },
             {
               name: 'Python',
@@ -76,7 +79,7 @@ class Profile extends Component {
             {
               name: 'Golang',
               level: 40,
-              color: 'red',
+              color: 'green',
             },
             {
               name: 'Java',
@@ -86,12 +89,12 @@ class Profile extends Component {
             {
               name: 'Kotlin',
               level: 20,
-              color: 'red',
+              color: 'green',
             },
             {
               name: 'Dart',
               level: 10,
-              color: 'green',
+              color: 'red',
             },
             {
               name: 'Lua',
@@ -101,34 +104,56 @@ class Profile extends Component {
             {
               name: 'C#',
               level: 30,
-              color: 'green',
+              color: 'red',
             },
             {
               name: 'C++',
               level: 20,
               color: 'red',
             },
-        ]
-        const colors = {
-            bar: 'red', // Change the level color here
-            title: {
-                text: 'white', // Change the title color here
-                background: 'green', // Change the background color of the title here
-            },
+        ];
+        const dataGame = {
+            labels: ['Unity', 'Godot', 'Phaser', 'Unreal', 'Defold', 'Flame','Libgdx/libktx', 'Construct'],
+            datasets: [{
+                label: "Mastery",
+                data: [10,20,20,0,10,0,0,20],
+                backgroundColor: 'red',
+                borderColor: 'white'
+            }]
         };
-        const labels = {
-            percentage: {
-                fontSize: '12px',
-                fontWeight: 'bold',
-                color: '#FF0000', // Change the percentage text color here
-            },
+        const dataFrontend = {
+            labels: ['Html,CSS,JS', 'Bootstrap', 'Tailwind' , 'Jquery', 'Vue', 'React', 'Angular', 'UI/UX'],
+            datasets: [{
+                label: "Mastery",
+                data: [50,100,70,70,70,60,10,10],
+                backgroundColor: 'red',
+                borderColor: 'white'
+            }]
         };
-        const data = {
+        const dataBackend = {
             labels: ['Laravel', 'Codeigniter', 'Flask', 'Django', 'Express', 'Golang', 'Rails', 'Spring'],
             datasets: [{
                 label: "Mastery",
                 data: [80, 60, 100, 40, 50, 50, 40, 20],
-                backgroundColor: 'aqua',
+                backgroundColor: 'green',
+                borderColor: 'white'
+            }]
+        };
+        const dataMobile = {
+            labels: ['Flutter', 'Android Studio', 'React Native', 'Cordova', 'Ionic', 'Quasar'],
+            datasets: [{
+                label: "Mastery",
+                data: [10, 50, 10, 40, 0, 10],
+                backgroundColor: 'red',
+                borderColor: 'white'
+            }]
+        };
+        const dataSoftware = {
+            labels: ['Netbeans', 'Visual Studio', 'QT Creator', 'Electron', 'Tauri', 'GTK'],
+            datasets: [{
+                label: "Mastery",
+                data: [50, 70, 20, 0, 0, 10],
+                backgroundColor: 'red',
                 borderColor: 'white'
             }]
         };
@@ -171,6 +196,11 @@ class Profile extends Component {
                                 <td>Universitas Hasyim Asy'ari</td>
                             </tr>
                             <tr>
+                                <td style={width}>Okupasi</td>
+                                <td style={width2}>:</td>
+                                <td>Backend Developer</td>
+                            </tr>
+                            <tr>
                                 <td style={width}>Alamat</td>
                                 <td style={width2}>:</td>
                                 <td>Kec.Bareng,Kab.Jombang</td>
@@ -184,11 +214,41 @@ class Profile extends Component {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut sodales orci, sed tempor dolor. Aliquam erat volutpat. Nam semper quam id leo lobortis sagittis in eget arcu. Proin condimentum tempus fringilla. In eu maximus eros, sit amet placerat diam. Curabitur a volutpat quam. Nam maximus leo ipsum, eget faucibus turpis blandit sed. Integer vulputate porttitor augue at facilisis. Nulla eget posuere nulla, vitae condimentum tellus. Praesent egestas metus vel risus luctus, ut malesuada erat commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <br />
                         <center>
+                            {/* Game Developer */}
+                            <p className='font-bold'>Skill As Game Developer</p>
+                            <hr className='hrline2' />
+                            <div className='px-4 py-4 rounded radar-con'>
+                                <Radar data={dataGame} options={options}></Radar>
+                            </div>
+
+                            {/* Frontend Developer */}
+                            <p className='font-bold'>Skill As Frontend Developer</p>
+                            <hr className='hrline2' />
+                            <div className='px-4 py-4 rounded radar-con'>
+                                <Radar data={dataFrontend} options={options}></Radar>
+                            </div>
+
+                            {/* Backend Developer */}
                             <p className='font-bold'>Skill As Backend Developer</p>
                             <hr className='hrline2' />
                             <div className='px-4 py-4 rounded radar-con'>
-                                <Radar data={data} options={options}></Radar>
+                                <Radar data={dataBackend} options={options}></Radar>
                             </div>
+
+                            {/* Mobile Developer */}
+                            <p className='font-bold'>Skill As Mobile Developer</p>
+                            <hr className='hrline2' />
+                            <div className='px-4 py-4 rounded radar-con'>
+                                <Radar data={dataMobile} options={options}></Radar>
+                            </div>
+
+                            {/* Software Developer */}
+                            <p className='font-bold'>Skill As Sotware Developer</p>
+                            <hr className='hrline2' />
+                            <div className='px-4 py-4 rounded radar-con'>
+                                <Radar data={dataSoftware} options={options}></Radar>
+                            </div>
+
                             <p className='font-bold'>All Skill</p>
                             <hr className='hrline2' />
                             <div className='bg-gray-600 px-4 py-4 rounded' style={{marginBottom:"80px"}}>
@@ -196,9 +256,12 @@ class Profile extends Component {
                             </div>
                             <p className='font-bold'>Contact</p>
                             <hr className='hrline2' />
-                            <div className="bg-cyan-600 px-4 py-4 rounded text-white">
+                            <div className="bg-slate-600 px-4 py-4 rounded text-white">
+                                <a href="#" className='mx-2'><img className='img-contact' src={Github} /></a>
                                 <a href="#" className='mx-2'><img className='img-contact' src={Facebook} /></a>
                                 <a href="#" className='mx-2'><img className='img-contact' src={Linkedin} /></a>
+                                <a href="#" className='mx-2'><img className='img-contact' src={Instagram} /></a>
+                                <a href="#" className='mx-2'><img className='img-contact' src={Twitter} /></a>
                             </div>
                         </center>
                     </div>

@@ -19,3 +19,11 @@
     width: 100%;
     height: 500px;
 }
+
+@media (max-width:526px) {
+    .radar-con {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 500px;
+    }
+}
